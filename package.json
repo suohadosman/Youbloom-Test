@@ -1,14 +1,17 @@
 {
   "name": "youbloom-react-demo",
+  "homepage": "https://suohadosman.github.io/Youbloom-Test",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "test": "jest"
-  },
+    "preview": "vite preview"
+}
+,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "react": "^18.3.1",
@@ -24,6 +27,7 @@
     "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.4.20",
     "babel-jest": "^29.7.0",
+    "gh-pages": "^6.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",

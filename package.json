@@ -1,17 +1,15 @@
 {
   "name": "youbloom-react-demo",
-  "homepage": "https://suohadosman.github.io/Youbloom-Test",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-}
-,
+  },
+
+
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "react": "^18.3.1",
